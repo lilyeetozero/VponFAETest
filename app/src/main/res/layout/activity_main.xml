@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vpadn="http://schemas.android.com/apk/lib/com.vpadn.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.oopslily.vponfaetest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.vpadn.ads.VpadnBanner
+            android:id="@+id/vpadnBannerXML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:onClick="showBanner"
+            android:text="Banner" />
+
+        <Button
+            android:id="@+id/btn_interstitial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:onClick="showInterstitial"
+            android:text="Interstitial" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
